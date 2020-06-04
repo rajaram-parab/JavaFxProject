@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ComboBox fx:id="combobox" layoutX="26.0" layoutY="14.0" onAction="#comboText" prefWidth="150.0" promptText="Slect One Value">
+      <items>
+      <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+      </FXCollections>
+      </items>
+      </ComboBox>
+      <Label fx:id="lblComboText" layoutX="88.0" layoutY="52.0" prefHeight="17.0" prefWidth="150.0" />
+      <ListView fx:id="listview" layoutY="86.0" prefHeight="200.0" prefWidth="300.0" >
+       <items>
+      <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+      </FXCollections>
+      </items>
+      </ListView>
+      <Button fx:id="btnAddItem" layoutX="26.0" layoutY="57.0" mnemonicParsing="false" onAction="#buttonAction" text="Add Item" />
+   </children>
+</AnchorPane>

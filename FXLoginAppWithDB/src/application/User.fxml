@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <top>
+      <Label fx:id="userLbl" prefHeight="84.0" prefWidth="199.0" text="User Welcome" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Button mnemonicParsing="false" onAction="#SignOut" prefHeight="61.0" prefWidth="130.0" text="Sign Out" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
